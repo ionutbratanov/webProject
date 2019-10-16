@@ -13,7 +13,7 @@ public abstract class CSVParser {
         super();
         this.file = file;
     }
-protected abstract String[] getTokensFromLine(String[] tokens);
+protected abstract void getTokensFromLine(String[] tokens);
     
 public void parse() {
         BufferedReader br = null;

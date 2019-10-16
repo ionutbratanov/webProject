@@ -40,15 +40,15 @@ public class LoadFromCsv extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath())
 				.append("***Data este: " + new java.util.Date());
 		// TODO De preluat informatiile din form (de pe request)
-		System.out.println(request.getParameter("tipFactura")
-				+ request.getParameter("CUIFurnizor")
-				+ request.getParameter("CUIClient")
-				+ request.getParameter("NrFactura")
-				+ request.getParameter("DataFactura")
-				+ request.getParameter("ProduseServicii")
-				+ request.getParameter("UM")
-				+ request.getParameter("Cantitate")
-				+ request.getParameter("PretUnitar")
+		System.out.println(request.getParameter("tipFactura") + " "
+				+ request.getParameter("CUIFurnizor") + " "
+				+ request.getParameter("CUIClient") + " "
+				+ request.getParameter("NrFactura") + " "
+				+ request.getParameter("DataFactura") + " "
+				+ request.getParameter("ProduseServicii") + " "
+				+ request.getParameter("UM") + " "
+				+ request.getParameter("Cantitate") + " "
+				+ request.getParameter("PretUnitar") + " "
 				+ request.getParameter("PersoanaEmitenta"));
 		String tipFactura = request.getParameter("tipFactura");
 		String cuiFz = request.getParameter("CUIFurnizor");
