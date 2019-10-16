@@ -20,6 +20,7 @@
     .tg .tg-awt2{font-size:100%;background-color:#ffffff;color:#000000;border-color:#000000;text-align:center;vertical-align:top}
 </style>
 <%
+String tipFactura = pageContext.getAttribute("tipFactura", PageContext.SESSION_SCOPE).toString();
 String nrFactura = pageContext.getAttribute("nrFactura", PageContext.SESSION_SCOPE).toString();
 String dataFactura = pageContext.getAttribute("dataFactura", PageContext.SESSION_SCOPE).toString();
 String produseServicii = pageContext.getAttribute("produseServicii", PageContext.SESSION_SCOPE).toString();
@@ -41,7 +42,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
         <input type='text' >
         <%} %>
          </th>
-        <th class="tg-9nx0" colspan="3" rowspan="4">Factura Fiscala</th>
+        <th class="tg-9nx0" colspan="3" rowspan="4" align="center">Factura <%=tipFactura %></th>
         <th class="tg-6scy" colspan="4">Client:
         <%if (firmaClient!=null) { %>
         <%=firmaClient.getDENUMIRE() %>
@@ -126,42 +127,42 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
         <td class="tg-wabs" colspan="2"><%=valoare %> RON</td>
     </tr>
     <tr>
-        <td class="tg-wabs">2</td>
-        <td class="tg-wabs" colspan="3"></td>
-        <td class="tg-wabs"></td>
-        <td class="tg-wabs" colspan="2"></td>
-        <td class="tg-wabs" colspan="2"></td>
-        <td class="tg-wabs" colspan="2"></td>
-    </tr>
-    <tr>
-        <td class="tg-wabs">3</td>
-        <td class="tg-wabs" colspan="3"></td>
-        <td class="tg-wabs"></td>
-        <td class="tg-wabs" colspan="2"></td>
+        <td class="tg-muc8">2</td>
+        <td class="tg-muc8" colspan="3"></td>
+        <td class="tg-muc8"></td>
+        <td class="tg-muc8" colspan="2"></td>
         <td class="tg-wabs" colspan="2"></td>
         <td class="tg-wabs" colspan="2"></td>
     </tr>
     <tr>
-        <td class="tg-wabs">4</td>
-        <td class="tg-wabs" colspan="3"></td>
-        <td class="tg-wabs"></td>
-        <td class="tg-wabs" colspan="2"></td>
+        <td class="tg-muc8">3</td>
+        <td class="tg-muc8" colspan="3"></td>
+        <td class="tg-muc8"></td>
+        <td class="tg-muc8" colspan="2"></td>
         <td class="tg-wabs" colspan="2"></td>
         <td class="tg-wabs" colspan="2"></td>
     </tr>
     <tr>
-        <td class="tg-wabs">5</td>
-        <td class="tg-wabs" colspan="3"></td>
-        <td class="tg-wabs"></td>
+        <td class="tg-muc8">4</td>
+        <td class="tg-muc8" colspan="3"></td>
+        <td class="tg-muc8"></td>
+        <td class="tg-muc8" colspan="2"></td>
         <td class="tg-wabs" colspan="2"></td>
+        <td class="tg-wabs" colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="tg-muc8">5</td>
+        <td class="tg-muc8" colspan="3"></td>
+        <td class="tg-muc8"></td>
+        <td class="tg-muc8" colspan="2"></td>
         <td class="tg-wabs" colspan="2">Semnatura</td>
         <td class="tg-wabs" colspan="2">Total de plata</td>
     </tr>
     <tr>
-        <td class="tg-wabs">6</td>
-        <td class="tg-wabs" colspan="3"></td>
-        <td class="tg-wabs"></td>
-        <td class="tg-wabs" colspan="2"></td>
+        <td class="tg-muc8">6</td>
+        <td class="tg-muc8" colspan="3"></td>
+        <td class="tg-muc8"></td>
+        <td class="tg-muc8" colspan="2"></td>
         <td class="tg-wabs" colspan="2">de primire</td>
         <td class="tg-wabs" colspan="2" rowspan="4"><%=valoare %> RON</td>
     </tr>
@@ -179,6 +180,15 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
         <td class="tg-wabs" colspan="3"></td>
     </tr>
 </table>
+
+
+<button onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
 
 </body>
 

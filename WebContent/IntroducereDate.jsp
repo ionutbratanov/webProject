@@ -9,26 +9,52 @@
 <body>
 <%--Cream un formular in clasa JSP, in care se vor introduce 
 de utilizator a tuturor datelor cerute --%>
-<form action="LoadFromCsv">
-  Introduceti CUI furnizor:<br>
-  <input type="text" name="CUIFurnizor" value=" "><br>
-  Introduceti CUI client:<br>
-  <input type="text" name="CUIClient" value=" "><br>
-  Introduceti numar factura:<br>
-  <input type="text" name="NrFactura" value=" "><br>
-  Introduceti data factura:<br>
-  <input type="text" name="DataFactura" value=" "><br>
-  Introduceti denumire produse sau servicii:<br>
-  <input type="text" name="ProduseServicii" value=" "><br>
-  Introduceti unitatea monetara:<br>
-  <input type="text" name="UM" value=" "><br>
-  Introduceti cantitatea:<br>
-  <input type="text" name="Cantitate" value=" "><br>
-  Introduceti pret unitar:<br>
-  <input type="text" name="PretUnitar" value=" "><br>
-  Introduceti persoana emitenta:<br>
-  <input type="text" name="PersoanaEmitenta" value=" "><br><br>
-  <input type="submit" value="Submit">
+<form action="LoadFromCsv" method="post">
+	<table>
+		<tr>
+		<th align="right">Tip factura: fiscala / proforma</th>
+	  	<td><input type="radio" name="tipFactura" value="Fiscala" checked="checked"> Factura fiscala <Br/>
+	  	<input type="radio" name="tipFactura" value="Proforma"> Factura proforma</td>
+	</tr>
+	<tr>
+		<th align="right">Introduceti CUI furnizor:</th>
+	  	<td><input type="text" name="CUIFurnizor" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti CUI client:</th>
+	  <td><input type="text" name="CUIClient" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti numar factura:</th>
+	  <td><input type="text" name="NrFactura" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti data factura: 
+	  <td><input type="text" name="DataFactura" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti denumire produse sau servicii:</th>
+	  <td><input type="text" name="ProduseServicii" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti unitatea monetara: </th>
+	  <td><input type="text" name="UM" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti cantitatea:</th>
+	  <td><input type="text" name="Cantitate" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti pret unitar:</th>
+	  <td><input type="text" name="PretUnitar" value=""></td>
+	</tr>
+	<tr>
+	  <th align="right">Introduceti persoana emitenta:</th>
+	  <td><input type="text" name="PersoanaEmitenta" value=""></td><br>
+	</tr>
+	<tr>
+	  <td align="center" colspan="2"><input type="submit" value="Submit">
+  </table>
 </form>
 
 Dupa afisare factura:</br>
