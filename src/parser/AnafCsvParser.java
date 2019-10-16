@@ -26,8 +26,8 @@ public class AnafCsvParser extends CSVParser {
 		Firma firma = new Firma();
 		
 		firma.setDENUMIRE(tokens[0]);
-		System.out.println(tokens[0]);
-//		firma.setCUI(tokens[1]);
+//		System.out.println(tokens[0]);
+		firma.setCUI(tokens[1]);
 		if (tokens[1]==null) System.out.println("CUI NULL!!!!!!! ptr "+ tokens[0]);
 		//System.out.println(tokens[1]);
 		firma.setCOD_INMATRICULARE(tokens[2]);

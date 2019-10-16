@@ -36,7 +36,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
 <!-- Cod HTML prin care se creaza tabela Factura -->
     <tr>
         <th class="tg-9nx0" colspan="4">Furnizor:
-        <%if (firmaFurnizor!=null) { %>
+        <%if (firmaFurnizor != null) { %>
         <%=firmaFurnizor.getDENUMIRE() %>
         <%} else {%>
         <input type='text' >
@@ -44,7 +44,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
          </th>
         <th class="tg-9nx0" colspan="3" rowspan="4" align="center">Factura <%=tipFactura %></th>
         <th class="tg-6scy" colspan="4">Client:
-        <%if (firmaClient!=null) { %>
+        <%if (firmaClient != null) { %>
         <%=firmaClient.getDENUMIRE() %>
         <%} else {%>
         <input type='text' >
@@ -53,7 +53,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
     </tr>
     <tr>
         <td class="tg-9nx0" colspan="4">CUI:
-        <%if (firmaFurnizor!=null) { %>
+        <%if (firmaFurnizor != null) { %>
         <%=firmaFurnizor.getCUI() %>
         <%} else {%>
         <input type='text' >
@@ -61,7 +61,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
            
           </td>
         <td class="tg-9nx0" colspan="4">CUI:
-        <%if (firmaClient!=null) { %>
+        <%if (firmaClient != null) { %>
         <%=firmaClient.getCUI() %>
         <%} else {%>
         <input type='text' >
@@ -70,14 +70,14 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
     </tr>
     <tr>
         <td class="tg-9nx0" colspan="4">COD_ORC:
-        <%if (firmaFurnizor!=null) { %>
+        <%if (firmaFurnizor != null) { %>
         <%=firmaFurnizor.getCOD_INMATRICULARE() %>
         <%} else {%>
         <input type='text' >
         <%} %>        
          </td>
         <td class="tg-9nx0" colspan="4">COD_ORC: 
-        <%if (firmaClient!=null) { %>
+        <%if (firmaClient != null) { %>
         <%=firmaClient.getCOD_INMATRICULARE() %>
         <%} else {%>
         <input type='text' >
@@ -86,14 +86,14 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
     </tr>
     <tr>
         <td class="tg-9nx0" colspan="4">Adresa: 
-        <%if (firmaFurnizor!=null) { %>
+        <%if (firmaFurnizor != null) { %>
         <%=firmaFurnizor.getADRESA() %>
         <%} else {%>
         <input type='text' >
         <%} %> 
         </td>
         <td class="tg-9nx0" colspan="4">Adresa: 
-         <%if (firmaClient!=null) { %>
+         <%if (firmaClient != null) { %>
         <%=firmaClient.getADRESA() %>
         <%} else {%>
         <input type='text' >
@@ -115,16 +115,16 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
         <td class="tg-muc8" colspan="3">Denumirea produselor sau a<br> serviciilor (lucrarilor)</td>
         <td class="tg-muc8">U.M.</td>
         <td class="tg-muc8" colspan="2">Cantitatea</td>
-        <td class="tg-wabs" colspan="2">Pretul unitar <br>(fara TVA)<br>   - lei -</td>
-        <td class="tg-awt2" colspan="2">Valoare</td>
+        <td class="tg-muc8" colspan="2">Pretul unitar <br>(fara TVA)<br>   - RON -</td>
+        <td class="tg-muc8" colspan="2">Valoare</td>
     </tr>
     <tr>
        <td class="tg-muc8">1</td>
         <td class="tg-muc8" colspan="3"><%=produseServicii %></td>
         <td class="tg-muc8"><%=uM %></td>
         <td class="tg-muc8" colspan="2"><%=cantitate %></td>
-        <td class="tg-wabs" colspan="2"><%=pretUnitar %></td>
-        <td class="tg-wabs" colspan="2"><%=valoare %> RON</td>
+        <td class="tg-muc8" colspan="2"><%=pretUnitar %></td>
+        <td class="tg-muc8" colspan="2"><%=valoare %></td>
     </tr>
     <tr>
         <td class="tg-muc8">2</td>
