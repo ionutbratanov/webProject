@@ -38,7 +38,11 @@ de utilizator a tuturor datelor cerute --%>
 	</tr>
 	<tr>
 	  <th align="right">Introduceti unitatea monetara: </th>
-	  <td><input type="text" name="UM" value=""></td>
+	  <!-- <td><input type="text" name="UM" value=""></td> -->
+	  <td><input type="radio" name="UM" value="RON" checked="checked"> RON <Br/>
+	  	<input type="radio" name="UM" value="EURO"> EURO<Br/>
+	  	<input type="radio" name="UM" value="MDL"> MDL<Br/>
+	  	<input type="radio" name="UM" value="USD"> USD</td>
 	</tr>
 	<tr>
 	  <th align="right">Introduceti cantitatea:</th>

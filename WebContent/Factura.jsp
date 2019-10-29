@@ -115,7 +115,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
         <td class="tg-muc8" colspan="3">Denumirea produselor sau a<br> serviciilor (lucrarilor)</td>
         <td class="tg-muc8">U.M.</td>
         <td class="tg-muc8" colspan="2">Cantitatea</td>
-        <td class="tg-muc8" colspan="2">Pretul unitar <br>(fara TVA)<br>   - RON -</td>
+        <td class="tg-muc8" colspan="2">Pretul unitar <br>(fara TVA)<br>   - <%=uM %> -</td>
         <td class="tg-muc8" colspan="2">Valoare</td>
     </tr>
     <tr>
@@ -164,7 +164,7 @@ Firma firmaFurnizor = (Firma)pageContext.getAttribute("firmaFurnizor", PageConte
         <td class="tg-muc8"></td>
         <td class="tg-muc8" colspan="2"></td>
         <td class="tg-wabs" colspan="2">de primire</td>
-        <td class="tg-wabs" colspan="2" rowspan="4"><%=valoare %> RON</td>
+        <td class="tg-wabs" colspan="2" rowspan="4"><%=valoare %> <%=uM %></td>
     </tr>
     <tr>
         <td class="tg-wabs" colspan="7">Factura valabila online cf art. 319, alin. 29, din Legea 227/2016 privind Codul Fiscal</td>
