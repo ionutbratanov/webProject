@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<%@ include file = "header.jsp" %>
+
 <%--Cream un formular in clasa JSP, in care se vor introduce 
 de utilizator a tuturor datelor cerute --%>
-<form action="LoadFromCsv">
+<form action="LoadFromCsv" method=POST>
   Introduceti CUI furnizor:<br>
   <input type="text" name="CUIFurnizor" value=" "><br>
   Introduceti CUI client:<br>
