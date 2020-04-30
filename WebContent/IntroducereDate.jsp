@@ -59,6 +59,16 @@ de utilizator a tuturor datelor cerute --%>
 
 </table>
   
+  
+    Introduceti denumire produse sau servicii:<br>
+  <input type="text" name="ProduseServicii" value=" "><br>
+  Introduceti unitatea monetara:<br>
+  <input type="text" name="UM" value=" "><br>
+  Introduceti cantitatea:<br>
+  <input type="text" name="Cantitate" value=" "><br>
+  Introduceti pret unitar:<br>
+  <input type="text" name="PretUnitar" value=" "><br>
+  
 </form>
 
 <br>

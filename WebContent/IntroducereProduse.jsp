@@ -18,11 +18,13 @@ de utilizator a tuturor datelor cerute --%>
   <input type="text" name="CUIFurnizor" value=" "><br>
   Introduceti CUI client:<br>
   <input type="text" name="CUIClient" value=" "><br>
-   -->
+
   Introduceti numar factura:<br>
   <input type="text" name="NrFactura" value=" "><br>
   Introduceti data factura:<br>
   <input type="text" name="DataFactura" value=" "><br>
+     -->
+     
   Introduceti denumire produse sau servicii:<br>
   <input type="text" name="ProduseServicii" value=" "><br>
   Introduceti unitatea monetara:<br>
@@ -31,8 +33,10 @@ de utilizator a tuturor datelor cerute --%>
   <input type="text" name="Cantitate" value=" "><br>
   Introduceti pret unitar:<br>
   <input type="text" name="PretUnitar" value=" "><br>
+  <!-- 
   Introduceti persoana emitenta:<br>
   <input type="text" name="PersoanaEmitenta" value=" "><br><br>
+    -->
   <input type="submit" value="Submit">
 </form>
 
